@@ -1,0 +1,92 @@
+@theme-color: #01BEF5;
+
+.template {
+  border: 1px solid #000;
+  #resume {
+    padding: 30px 30px;
+    .resume_basic {
+      display: flex;
+      margin-bottom: 10px;
+      &--detail {
+        flex: 1;
+        .name {
+          font-size: 32px;
+          color: @theme-color;
+          font-weight: 600;
+          margin-bottom: 0;
+        }
+        p {
+          font-weight: bold;
+          margin-bottom: 0;
+          line-height: 25px;
+        }
+      }
+      &--picture {
+        width: 30%;
+        text-align: right;
+        img {
+          width: 100px;
+          // margin-right: 20px;
+        }
+      }
+    }
+    .module {
+      margin-bottom: 10px;
+      .tip {
+        display: flex;
+        align-items: center;
+        h2 {
+          font-size: 20px;
+          color: @theme-color;
+          font-weight: 600;
+          margin-right: 10px;
+        }
+        .line {
+          flex: 1;
+          height: 4px;
+          display: flex;
+          align-items: center;
+          &--theme {
+            display: inline-block;
+            height: 3px;
+            width: 50px;
+            background-color: @theme-color;
+          }
+          &--black {
+            display: inline-block;
+            height: 1px;
+            flex: 1;
+            background-color: #000;
+          }
+        }
+      }
+    }
+    .resume_contact {
+      display: flex;
+      font-weight: bold;
+      line-height: 25px;
+      span {
+        flex: 1;
+      }
+    }
+    .resume_project {
+      &_title {
+        display: flex;
+        line-height: 25px;
+        span {
+          flex: 1;
+        }
+        &--name {
+          text-align: right;
+          a {
+            font-weight: bold;
+            color: @theme-color;
+          }
+        }
+      }
+      &_desc {
+        white-space: pre-wrap;
+      }
+    }
+  }
+}
