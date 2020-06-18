@@ -2,7 +2,7 @@
 ## 起步
 1. 开通阿里云短信服务，邮箱服务，科大讯飞关键词服务
 2. 安装依赖
-3. npm start运行项目
+3. 进入client和server，npm start运行项目
 ## 技术栈
 1. 前端：react + redux + antd + echarts + html2canvas + jspdf + jsonp + axios + less
 2. 后端：koa + mongoose + multer + request + cheerio + node-schedule + nodemailer
