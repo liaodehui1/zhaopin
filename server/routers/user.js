@@ -1,0 +1,20 @@
+const router = require('koa-router')()
+const userServer = require('../controllers/user')
+
+router.post('/login', userServer.Login)
+router.get('/logout', userServer.Logout)
+router.post('/loginByCaptcha', userServer.loginByCaptcha)
+router.get('/getCaptchaByPhone', userServer.GetCaptchaByPhone)
+router.get('/getCaptchaByEmail', userServer.GetCaptchaByEmail)
+router.post('/addUser', userServer.AddUser)
+router.post('/register', userServer.Register)
+router.get('/hasUser', userServer.HasUser)
+router.post('/updateUser', userServer.UpdateUser)
+router.post('/updateUserName', userServer.UpdateUserName)
+router.post('/updatePhone', userServer.UpdatePhone)
+router.post('/updateEmail', userServer.UpdateEmail)
+router.post('/updatePassword', userServer.UpdatePassword)
+router.delete('/deleteUser', userServer.DeleteUser)
+router.get('/getUserList', userServer.GetUserList)
+
+module.exports = router

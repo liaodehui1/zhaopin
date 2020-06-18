@@ -1,0 +1,70 @@
+.loading {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 30px 50px;
+  margin: 20px 0;
+}
+
+.job {
+  display: flex;
+  padding: 10px;
+  &_detail {
+    flex: 1;
+    &--positionname {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .origin {
+      font-size: 10px;
+      padding-left: 10px;
+    }
+    &--salary {
+      color: red;
+    }
+    &--experience, &--education, &--type {
+      margin-left: 10px;
+    }
+    &--advantage, &--content {
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+  &_company {
+    width: 250px;
+    margin-left: 10px;
+    dt {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    dd {
+      display: flex;
+    }
+    dd a, dd span {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    &--name {
+      flex: 1;
+      font-weight: 16px;
+      color: #000;
+      font-weight: 600;
+      align-self: flex-end;
+      margin-left: 10px;
+    }
+    &--logo {
+      width: 100px;
+      height: 100px;
+      border: 1px solid #ccc;
+    }
+    .anticon {
+      margin-right: 10px;
+    }
+  }
+}
